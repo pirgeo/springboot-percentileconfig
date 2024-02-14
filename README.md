@@ -9,7 +9,7 @@ Each commit should be runnable, and should export data. See the steps below:
    1. Output contains only 0.1 percentile:
    ```
    my.timer(TIMER)[]; count=0.0, total_time=0.0 seconds, max=0.0 seconds
-   my.timer.percentile(GAUGE)[phi='0.3']; value=0.0 seconds
+   my.timer.percentile(GAUGE)[phi='0.1']; value=0.0 seconds
    ```
 2. In [21caaa20](https://github.com/pirgeo/springboot-percentileconfig/commit/21caaa2059e3af26ca78cae54a3318d308f36514), we add a `MeterFilter` via Spring Beans, which extends the percentiles to `[0.1, 0.2]`.
    1. Output contains 0.1 and 0.2 percentile
