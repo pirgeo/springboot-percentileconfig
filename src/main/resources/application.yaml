@@ -3,3 +3,7 @@ management:
     enable:
       all: false
       my: true
+
+    distribution:
+      percentiles:
+        my.timer: 0.3
