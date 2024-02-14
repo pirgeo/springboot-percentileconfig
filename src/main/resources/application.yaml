@@ -1,0 +1,5 @@
+management:
+  metrics:
+    enable:
+      all: false
+      my: true
